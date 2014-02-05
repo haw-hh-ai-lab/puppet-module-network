@@ -6,6 +6,9 @@ Module for configuring network interfaces.
 Tested on Debian GNU/Linux 6.0 Squeeze and Ubuntu 10.4 LTS with
 Puppet 2.6. Patches for other operating systems are welcome.
 
+Additions by Lutz Behnke:
+ - support mutltiple entries for same option
+ - use upstart instead of sysV init for ubuntu beyond 12.04 LTS
 
 Installation
 ------------
