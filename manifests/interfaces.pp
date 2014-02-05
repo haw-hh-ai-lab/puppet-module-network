@@ -13,7 +13,7 @@ class network::interfaces(
   }
 
   service { 'networking':
-    require => running,
+    ensure => running,
   }
 
 }
