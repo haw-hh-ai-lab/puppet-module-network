@@ -16,14 +16,14 @@
 			</arguments>
 		</buildCommand>
 		<buildCommand>
-			<name>org.cloudsmith.geppetto.pp.dsl.ui.modulefileBuilder</name>
+			<name>com.puppetlabs.geppetto.pp.dsl.ui.modulefileBuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
 		<nature>com.puppetlabs.geppetto.pp.dsl.ui.puppetNature</nature>
-		<nature>org.cloudsmith.geppetto.pp.dsl.ui.puppetNature</nature>
+		<nature>com.puppetlabs.geppetto.pp.dsl.ui.puppetNature</nature>
 		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
 	</natures>
 </projectDescription>
