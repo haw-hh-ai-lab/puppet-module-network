@@ -5,4 +5,4 @@ branches:
   - add_test_framework
 language: ruby
 bundler_args: --without development
-script: "bundle exec rake spec SPEC_OPTS='--format documentation'"
+script: "bundle exec rake unit spec SPEC_OPTS='--format documentation'"
