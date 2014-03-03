@@ -1,0 +1,8 @@
+---
+ntpserver: ['ntp1.domain.com','ntpXX.domain.com']
+user:
+  oneuser:
+    shell: '/bin/bash'
+  twouser:
+    shell: '/sbin/nologin'
+
