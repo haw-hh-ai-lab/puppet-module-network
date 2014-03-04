@@ -10,8 +10,8 @@ describe 'network::interfaces' do
   context 'create interface definition' do
     let(:params) { {
       :interfaces => { 
-        eth0 => {'method' => 'dhcp'}, 
-        eth1 => {
+        'eth0' => {'method' => 'dhcp'}, 
+        'eth1' => {
           'method' => 'static',
           'address' => '192.168.0.1',
           'netmask' => '255.255.0.0'
@@ -21,7 +21,7 @@ describe 'network::interfaces' do
     } }
 
     it do
-      should contain_file('/etc/network/interfaces').that_notifies(Service['networking'])
+      should contain_file('/etc/network/interfaces').that_notifies('Service[networking]')
 
       should contain_service('networking').with(
         'ensure' => 'running'
